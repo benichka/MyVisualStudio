@@ -1,0 +1,29 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+    <CodeSnippet Format="1.0.0">
+        <Header>
+                <Title>MyRegion</Title>
+                <Description>put the name of the region after the "region" and the "endregion" keywords</Description>
+                <Author>Benoit Masson-Bedeau</Author>
+                <Shortcut>regg</Shortcut>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>RegionName</ID>
+                    <ToolTip>Replace with your region name.</ToolTip>
+                    <Default>my region</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp">
+                <![CDATA[#region $RegionName$
+                $end$
+                #endregion $RegionName$]]>
+            </Code>
+    </Snippet>
+  </CodeSnippet>
+
+</CodeSnippets>
